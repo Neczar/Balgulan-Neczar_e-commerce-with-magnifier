@@ -1,0 +1,215 @@
+
+		:root{
+			--gra: linear-gradient(45deg, rgb(53, 159, 197), rgb(6, 8, 14));
+		}
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		main{
+			width: 100%;
+			font-family: sans-serif;
+		}
+
+		/************* NAVBAR *******************/   
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 1%;
+	background-color: #000000;
+  }
+  
+  nav .logo{
+	font-size: 31px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #e5e5e5;
+  }
+  
+  nav span {
+	color: #357bb1;
+  }
+  
+  nav ul li{
+	list-style: none;
+	display: inline-block;
+  }
+  
+  nav i{
+	color: #357bb1;
+  }
+  nav ul li a{
+	display: block;
+	margin: 0 10px;
+	color: #fff7f7;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+  }
+  
+  nav ul li a:hover{
+	color:#357bb1; 
+  }
+  
+  nav ul i{
+	font-size: 22px;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+  
+ /******header******/
+		header{
+			width: 100%;
+			border-bottom: 2px solid #e5e5e5;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		header ul li{
+			list-style: none;
+			padding: 20px;
+			margin: 10px;
+			float: left;
+			font-size: 20px;
+			border-radius: 35px;
+
+		}
+		header ul li a{
+			color: inherit;
+			text-decoration: none;
+		}
+		header ul li.active{
+			background: var(--gra);
+		}
+		header ul li.active a{
+			color: white;
+			font-weight: bold;
+		}
+
+		/***product***/
+		.product-field{
+			padding: 40px 20px;
+		}
+		.product-field ul{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.product-field ul li{
+			list-style: none;
+			width: 25.4%;
+			height: 400px;
+			transition: 0.5s all;
+			background: whitesmoke;
+			overflow: hidden;
+			border-radius: 20px;
+			padding: 10px;
+			margin: 20px 100px 20px 10px;
+			position: relative;
+		}
+		picture{
+			background: #29506d;
+			padding: 28px;
+		    position: absolute;
+		    right: 0;
+		    bottom: 41%;
+		    width: 75%;
+		    height: 85%;
+		    border-radius: 50px 20px 0 20px;
+		    overflow: hidden;
+		    box-shadow: 0px 1px 0px #00000020, -1px 0px 0px #ccc;
+		}
+		picture img {
+		  width: 100%;
+		  z-index: 1;
+		  padding: 5px 0 0 0;
+		}
+		.detail{
+			width: 100%;
+			height: 100%;
+		}
+		.detail .icon{
+			width: 30%;
+		    height: 55%;
+		    padding: 20px 5px;
+		}
+		.icon span{
+			background: #00000030;
+		    display: inline-block;
+		    width: 50px;
+		    height: 50px;
+		    line-height: 50px;
+		    text-align: center;
+		    padding: 0;
+		    border-radius: 50%;
+		    margin: 0 0 20px 5px;
+		    font-size: 20px;
+		    color: white;
+		}
+		.icon span:hover{
+			background: var(--gra);
+			cursor: pointer;
+		}
+		.detail > strong{
+			display: inherit;
+			margin: 30px 30px;
+			font-size: 23px;
+			letter-spacing: 2px;
+			color: #555;
+		}
+		.detail > span{
+			display: inherit;
+			padding: 0  20px;
+			margin: 10px 10px 10px 10px; 
+    		width: 80%;
+			font-size: 18px;
+		}
+		.detail small{
+			display: inline-block;
+		    padding: 8px 20px;
+		    margin: 0 30px;
+		    font-weight: bold;
+		    border-radius: 6px;
+		    border: 1px solid #999;
+		    cursor: pointer;
+		}
+		.detail small:hover{
+			    background: var(--gra);
+			    color: white;
+			    border-color:#357bb1;
+		}
+		li h4{
+		    position: absolute;
+		    right: 10px;
+		    top: 50%;
+		    font-size: 30px;
+		    color: #ffffff;
+		    text-shadow: 1px 1px 2px black;
+		}
+
+/*****magnifier*********/
+
+
+.magnify {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+
+ 
+  .magnify img {
+    width: 325px;
+    height: 325px;
+    position: absolute;
+  
+  }
+
+  
